@@ -71,8 +71,8 @@ class AuthViewModel extends ChangeNotifier {
     required String password,
     required String degree,
     required String year,
-    String? imagePath,     // ✅ optional now
-    String? receiptPath,   // ✅ optional now
+    String? imagePath,
+    String? receiptPath,
   }) async {
     _loading = true; notifyListeners();
     try {
@@ -83,8 +83,8 @@ class AuthViewModel extends ChangeNotifier {
         password: password,
         degree: degree,
         year: year,
-        imagePath: imagePath,     // ✅ pass directly
-        receiptPath: receiptPath, // ✅ pass directly
+        imagePath: imagePath,
+        receiptPath: receiptPath,
       );
       _loading = false; notifyListeners();
       return ok;

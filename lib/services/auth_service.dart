@@ -9,8 +9,8 @@ class AuthService {
     required String password,
     required String degree,
     required String year,
-    String? imagePath,     // ✅ optional
-    String? receiptPath,   // ✅ optional
+    String? imagePath,
+    String? receiptPath,
   }) async {
     await Future.delayed(const Duration(seconds: 2)); // simulate API delay
 
